@@ -4,4 +4,6 @@ int main()
 {
 	starting_point();
 	get_choice();
+
+	return 0;
 }
