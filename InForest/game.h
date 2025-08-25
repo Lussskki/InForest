@@ -5,5 +5,6 @@
 
 void starting_point();
 int get_choice();
+int follow_the_road();
 
 #endif
