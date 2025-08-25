@@ -2,7 +2,7 @@
 #include "game.h"
 
 void starting_point()
-{
+{	
 	std::cout << "Hello stranger, you lost in forest. You have options to survive." << std::endl;
 	std::cout << "Here is options:\n" << std::endl;
 	std::cout << "1. Get in to tunnel \n" << std::endl;
@@ -26,9 +26,10 @@ int get_choice()
 				<< "What's your next step? \n"
 				<< "Now you seeing surface of this place. \n" << std::endl;
 			break;
-		case 2:
-			std::cout << "You following the road" << std::endl;
+		case 2: {
+			int char_road = follow_the_road();
 			break;
+			}
 		case 3:
 			std::cout << "Okay okay, goodbye stranger" << std::endl;
 			exit(0);
@@ -43,4 +44,12 @@ int get_choice()
 	};
 
 	return choice;
+}
+
+int follow_the_road()
+{
+	int road = 2;
+	std::cout << "You are on the road: " << road << std::endl;
+	std::cout << "You have to be careful on a " << road << " road cause there is a Devilmen"<< std::endl;
+	return road;
 }
