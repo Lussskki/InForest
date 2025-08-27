@@ -23,8 +23,7 @@ int get_choice()
 		case 1:
 			std::cout << "                       \n";
 			std::cout << "You are in the tunnel. \n"
-				<< "What's your next step? \n"
-				<< "Now you seeing surface of this place. \n" << std::endl;
+					  << "What's your next step? \n";			
 			break;
 		case 2: {
 			int char_road = follow_the_road();
@@ -35,8 +34,8 @@ int get_choice()
 			exit(0);
 		default:
 			std::cout << "Wrong choice!  \n"
-				<< "You dont want play with me? \n"
-				<< "Good Bye!\n" << std::endl;
+				      << "You dont want play with me? \n"
+				      << "Good Bye!\n" << std::endl;
 			exit(0);
 		}
 
